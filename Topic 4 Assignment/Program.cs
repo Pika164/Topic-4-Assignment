@@ -36,16 +36,16 @@ namespace Topic_4_Assignment
             Console.WriteLine();
             Console.WriteLine("Now please enter the following information shown as follows:");
             Console.WriteLine();
+            Console.Write("First name: ");
             firstName = Console.ReadLine();
-            Console.WriteLine("First name: " + firstName);
             Console.WriteLine();
+            Console.WriteLine("Last name: ");
             lastName = Console.ReadLine();  
-            Console.WriteLine("Last name: " + lastName);
             Console.WriteLine();
+            Console.WriteLine("Grade 9-12: ");
             grade = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Grade 9-12: " + grade);
             Console.WriteLine();
-            Console.WriteLine("");
+            Console.WriteLine("Student ID: ");
             //Working on rest of assignment, MAKE SURE TO COME BACK TO THIS ABOVE
             Console.WriteLine();
             Console.WriteLine("Hello! " + "What is your name?");
