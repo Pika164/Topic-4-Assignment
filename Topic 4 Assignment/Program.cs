@@ -82,7 +82,25 @@ namespace Topic_4_Assignment
             Console.WriteLine("Your Total when divided by 2 is: " + ((num1 + num2 + num3)/2));
             Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Item 1: ");
+            Console.WriteLine("Sales Receipt");
+            Console.WriteLine();
+            Console.Write("Item 1: ");
+            item1 = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Price 1: ");
+            Double.TryParse(Console.ReadLine(), out price1);
+            Console.WriteLine();
+            Console.Write("Item 2: ");
+            item2 = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Price 2: ");
+            Double.TryParse(Console.ReadLine(), out price2);
+            Console.WriteLine();
+            Console.WriteLine("======================");
+            Console.WriteLine();
+            Console.WriteLine("\tTotal:\t" + (price1 + price2));
+            Console.ReadLine();
+
 
 
         }
