@@ -6,11 +6,15 @@ namespace Topic_4_Assignment
     {
         static void Main(string[] args)
         {
-            String name, firstName, lastName, login, item1, item2;
+            string name, firstName, lastName, login, item1, item2;
             int age, grade, studentID, number;
-            Double perHour, average, num1, num2, num3, price1, price2;
+            double perHour, taxAmount, average, num1, num2, num3, price1, price2, discount, amountOff, total, subTotal, tax, totalOwed;
 
             number = 5;
+            discount = 0.2;
+            tax = 0.13;
+            
+            
 
             
             Console.Write("Hello! " + "What is your name? ");
@@ -95,10 +99,24 @@ namespace Topic_4_Assignment
             Console.WriteLine();
             Console.Write("Price 2: ");
             Double.TryParse(Console.ReadLine(), out price2);
+            total = price1 + price2;
+            amountOff = discount * total;
+            subTotal = total - amountOff;
+            taxAmount = subTotal * tax;
+            totalOwed = subTotal + taxAmount;
             Console.WriteLine();
-            Console.WriteLine("======================");
+            Console.WriteLine("========================================");
             Console.WriteLine();
-            Console.WriteLine("\tTotal:\t" + (price1 + price2));
+            Console.WriteLine("\tTotal:\t " + total.ToString("C"));
+            Console.WriteLine();
+            Console.WriteLine("\tDiscount (20%):\t " + amountOff.ToString("C"));
+            Console.WriteLine();
+            Console.WriteLine("\tSubtotal:\t " + subTotal.ToString("C"));
+            Console.WriteLine();
+            Console.WriteLine("\tTax (13%):\t " + taxAmount.ToString("C"));
+            Console.WriteLine();
+            Console.WriteLine("========================================");
+            Console.WriteLine("\tTotal owed:\t " + totalOwed.ToString("C"));
             Console.ReadLine();
 
 
